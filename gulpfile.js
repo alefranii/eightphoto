@@ -6,14 +6,10 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
- 
-
-
-
 
 //tarea1 concatena los archivos js convirtiendolos en script.js guardandolos en la carpeta dist.
 gulp.task('script', function () {
-    gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/materialize-css/dist/js/materialize.js', 'assets/js*.js'])
+    gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'assets/js*.js'])
         .pipe(concat('scripts.js'))
         //carpeta dist
         .pipe(gulp.dest('dist/js'));
@@ -22,7 +18,7 @@ gulp.task('script', function () {
 
 //tarea2  concatena y minifica el archivo main.scss, convirtiendolo en style.min.css. guardandolos en la carpeta dist.
 gulp.task('style',function(){
-    gulp.src(['node_modules/materialize-css/dist/css/materialize.css', 'assets/sass/main.scss'])
+    gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css', 'assets/sass/main.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCSS())
     .pipe(concat('style.min.css'))

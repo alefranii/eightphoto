@@ -1,7 +1,7 @@
 {
   "name": "eightphoto",
   "version": "1.0.0",
-  "description": "ejercicio maquetado 2",
+  "description": "ejercicio maquetacion",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,7 +26,7 @@
     "gulp-webserver": "^0.9.1"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
-    "materialize-css": "^0.100.1"
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
   }
 }
