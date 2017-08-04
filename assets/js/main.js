@@ -21,3 +21,10 @@
 		list.classList.toggle('hidden-xs');
 	})	
 })();
+
+/* servicios */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);

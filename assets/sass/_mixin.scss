@@ -1,6 +1,8 @@
-@mixin margen{
-	margin: 4% auto 6% 6%;
-	width: 86%;
+@mixin block{
+	padding: 36px;
+	margin-bottom: 0px;
+	color: inherit;
+	background-color: #eee;
 }
 @mixin tituloh2{
 	text-transform: uppercase;
