@@ -94,8 +94,12 @@ h1{
 	font-weight: 200;
 }
 .content-block-one > hr {
-	border-top-color: #d5d5d5;
+	border-top-color: $black;
 	text-align: center;
+	margin-top: -4px;
+	margin-bottom: 24px;
+	max-width: 8%;
+	margin-left: 46%;
 }
 .container .content-block-one {
 	border-radius: 6px;
@@ -163,15 +167,19 @@ h1{
 
 
 
-
 .h-figure{
 	padding-bottom: 38%;
 	margin-left: 3%;
 	width: 100%;
 }
 
-
-
+.hr{
+	margin-top: 20px;
+	margin-bottom: 17px;
+	max-width: 9%;
+	border-top: 1px solid #000;
+	text-align: center;
+}
 
 
 
@@ -456,20 +464,25 @@ h1{
 	padding: 0 30px;
 }
 .gal{
-/* margin: -18px; */
+	/* margin: -18px; */
 }
 
 .efect h3 {
-	@include hover;
 	margin: 0 0 6px;
+	color: $blanco;
 	text-transform: uppercase;
 	font-size: 1.1em;
 	letter-spacing: 2px;
+}
+h3:hover {
+	color: $verde;
+	cursor: pointer;
 }
 
 .efect p {
 	margin: 0 0 10px;
 	opacity: 0.6;
+	color: $blanco;
 }
 
 .efect .icons {
@@ -499,6 +512,7 @@ h1{
 .efect a i:hover {
 	background-color: $verde;
 	cursor: pointer;
+	border-radius: 29px;
 }
 
 .efect:hover:before,

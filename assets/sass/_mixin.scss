@@ -4,12 +4,6 @@
 	color: inherit;
 	background-color: #eee;
 }
-@mixin hover{
-	:hover {
-	background-color: $verde;
-	cursor: pointer;
-}
-}
 
 //fotos
 @mixin span{
