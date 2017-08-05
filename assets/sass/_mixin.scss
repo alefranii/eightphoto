@@ -4,16 +4,11 @@
 	color: inherit;
 	background-color: #eee;
 }
-@mixin tituloh2{
-	text-transform: uppercase;
-	position: relative;
-	font-size: 56px;
-	padding-left: 20%;
-	margin-top: -6%;
-	span{
-		display: inline-block;
-		//padding: 0 35px;
-	}
+@mixin hover{
+	:hover {
+	background-color: $verde;
+	cursor: pointer;
+}
 }
 
 //fotos

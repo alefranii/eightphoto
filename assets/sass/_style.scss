@@ -1,4 +1,4 @@
-
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 * {
 	margin: 0;
@@ -70,7 +70,15 @@ h1{
 		color: $black;
 		margin-top: -11px;
 	}
-	
+	.arriba{
+		margin: -2%;
+		width: 104%;
+	}
+	.abajo{
+		margin: -2%;
+		width: 104%;
+	}
+
 }
 .content-block-one h1,
 .content-block-one .h1 {
@@ -236,6 +244,7 @@ h1{
 	margin: 0;
 }
 .efect0 h3 {
+	@include hover;
 	font-weight: 700;
 	margin-bottom: 5px;
 	text-transform: uppercase;
@@ -349,6 +358,7 @@ h1{
 }
 
 .efect1 h3 {
+	@include hover;
 	font-weight: 600;
 	font-size: 1.3em;
 	font-family: 'Playfair Display', Arial, sans-serif;
@@ -389,114 +399,118 @@ h1{
 
 
 .efect {
-  font-family: 'Lato', Arial, sans-serif;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin: 8px 5px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #000000;
-  font-size: 16px;
-  line-height: 1.2em;
-  text-align: center;
+	font-family: 'Lato', Arial, sans-serif;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	margin: 8px -2px;
+	min-width: 230px;
+	max-width: 330px;
+	width: 100%;
+	color: #000000;
+	font-size: 16px;
+	line-height: 1.2em;
+	text-align: center;
 }
 
 .efect *,
 .efect *:before,
 .efect *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
 }
 
 .efect:before {
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  content: '';
-  background-color: #ffffff;
-  opacity: 0;
-  -webkit-transform: scale(0.1);
-  transform: scale(0.1);
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	content: '';
+	background-color: $black;
+	opacity: 0;
+	-webkit-transform: scale(0.1);
+	transform: scale(0.1);
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
 }
 
 .efect img {
-  max-width: 100%;
-  vertical-align: top;
+	max-width: 100%;
+	vertical-align: top;
 }
 
 .efect figcaption {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  opacity: 0;
-  padding: 0 30px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+	padding: 0 30px;
+}
+.gal{
+/* margin: -18px; */
 }
 
 .efect h3 {
-  margin: 0 0 6px;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  letter-spacing: 2px;
+	@include hover;
+	margin: 0 0 6px;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	letter-spacing: 2px;
 }
 
 .efect p {
-  margin: 0 0 10px;
-  opacity: 0.6;
+	margin: 0 0 10px;
+	opacity: 0.6;
 }
 
 .efect .icons {
-  width: 100%;
+	width: 100%;
 }
 
 .efect a {
-  margin: 2px;
-  display: inline-block;
+	margin: 2px;
+	display: inline-block;
 }
 
 .efect a i {
-  background-color: #333333;
-  border-radius: 3px;
-  color: #000000;
-  display: block;
-  font-size: 20px;
-  line-height: 34px;
-  text-align: center;
-  width: 34px;
+	background-color: transparent;
+	border-radius: 3px;
+	color: #000000;
+	display: block;
+	font-size: 20px;
+	line-height: 34px;
+	text-align: center;
+	width: 34px;
 }
 
 .efect a i:before {
-  color: #fff;
+	color: #fff;
 }
 
 .efect a i:hover {
-  background-color: #D2B17F;
-  cursor: pointer;
+	background-color: $verde;
+	cursor: pointer;
 }
 
 .efect:hover:before,
 .efect.hover:before {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 .efect:hover figcaption,
 .efect.hover figcaption {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  opacity: 1;
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+	opacity: 1;
 }
