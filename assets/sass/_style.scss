@@ -5,7 +5,7 @@
 	padding: 0;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-family: 'Pompiere', cursive;
-	border: 0.5px solid blue;
+
 
 }
 
@@ -44,6 +44,12 @@ h1{
 		font-size: 24px;
 		line-height: 68px;
 	}
+	a.btn.btn-default.btn-outline.btn-circle{   
+		color: white;
+		background-color: #21759B;
+		width: 106px;
+		height: 43px;
+	}
 	.n-logo{    
 		background: url(../img/m129ctbxq65v0ce1e1k911.jpg)no-repeat;
 		width: 103px;
@@ -77,6 +83,18 @@ h1{
 	.abajo{
 		margin: -2%;
 		width: 104%;
+	}
+	a.btn.btn-default-boton{
+		margin-left: 47%;
+		background: $verde;
+		color: $blanco;
+		border-radius: 30px;
+		line-height: 38px;
+		width: 129px;
+	}
+	.cont{
+		text-align: center;
+
 	}
 
 }
@@ -131,6 +149,7 @@ h1{
 	margin-left: 92px;
 	padding: 20px;
 	font-size: 28px;
+	color: white;
 }
 .content-space-one {
 	padding: 0px;
@@ -143,6 +162,26 @@ h1{
 	background-size: cover;
 	padding-top: 100px;
 	padding-bottom: 100px;
+	.intera{
+		padding-top: -7%;
+	}
+	.interacciones{
+		padding-top: 10%;
+	}
+	.fa{
+		width:200px;
+		height: 141px;
+		color: $blanco;
+	}
+	h2{
+		color: $blanco;
+		margin-top: -93px;
+	}
+
+	a.icons{
+		color: $blanco;
+	}
+
 }
 .content-space-two {
 	padding: 0px;
@@ -325,7 +364,7 @@ h1{
 	max-width: 345px;
 	left: 6%;
 	width: 100%;
-	color: #000000;
+	color: $blanco;
 	text-align: center;
 	line-height: 1.4em;
 	font-size: 14px;
@@ -382,22 +421,32 @@ h1{
 	font-size: 0.9em;
 	letter-spacing: 1px;
 	opacity: 0.9;
+	color: $blanco;
 }
 
 .efect1 .icons {
 	text-align: center;
 	width: 100%;
+	color: $blanco;
 }
-
+.efect1 a{
+	color: $blanco;
+}
 .efect1 i {
 	padding: 10px 2px;
 	display: inline-block;
 	font-size: 18px;
 	font-weight: normal;
-	color: #e8b563;
+	color: $blanco;
 	opacity: 0.75;
 }
-
+.efect1 a.btn.btn-default-boto{
+		background: $verde solid;
+		color: $blanco;
+		border-radius: 30px;
+		line-height: 38px;
+		width: 129px;
+}
 .efect1 i:hover {
 	opacity: 1;
 	-webkit-transition: all 0.35s ease;
